@@ -25,7 +25,7 @@ int main(void)
 	}
 	else if  (n < 0)
 	{
-		printf("%d is negativezn", n);
+		printf("%d is negativez\n", n);
 	}
 	return (0);
 }
