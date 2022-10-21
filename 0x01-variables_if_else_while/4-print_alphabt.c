@@ -1,7 +1,10 @@
+#include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
  /**
-  * main - returns alphabets both except e and q
+  * main - Entry Point
+  *
+  * Description: 'Return alphabets both except e and q'
   *
   * Return: Always 0 (success)
   */
@@ -9,16 +12,15 @@
 int main(void)
 
 {
-	char ch = 'a';
+	char c;
 
-	while (ch <= 'z')
-	{
-		if ((ch != 'e') && (ch != 'q'))
-		{
-			putchar(ch);
+	c = 'a';
+	while
+		(c <= 'z') {
+			if ((c != 'q' && c != 'e') && c <= 'z')
+				putchar(c);
+			c++;
 		}
-		ch++;
-	}
 	putchar('\n');
 	return (0);
 }
