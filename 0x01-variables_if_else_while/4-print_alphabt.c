@@ -1,26 +1,24 @@
-#include <time.h>
 #include <stdio.h>
-#include <stdlib.h>
- /**
-  * main - Entry Point
-  *
-  * Description: 'Return alphabets both except e and q'
-  *
-  * Return: Always 0 (success)
-  */
 
+/**
+ * main - prints the alphabet in lowercase
+ *
+ * followed by a new line, except q and e
+ *
+ * Return: Always 0
+ */
 int main(void)
 
 {
-	char c;
+	char la;
 
-	c = 'a';
-	while
-		(c <= 'z') {
-			if ((c != 'q' && c != 'e') && c <= 'z')
-				putchar(c);
-			c++;
-		}
+	for (la = 'a'; la <= 'z'; la++)
+	{
+		if (la != 'e' && la != 'q')
+			putchar(la);
+	}
+
 	putchar('\n');
+
 	return (0);
 }
